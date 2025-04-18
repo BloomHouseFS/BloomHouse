@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="bloomstyle.css">
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Your custom validation JavaScript -->
+  <script src="checkout-validation.js" defer></script>
+</head>
+
+<body>
+
+  <h1>🌸 Checkout</h1>
+  <h2>Purchase details:</h2>
+  <div id="checkout-items"></div>
+  <p id="checkout-total">Total: €0.00</p>
+  
+  <h2>Please enter your details here:</h2>
+
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form id="checkout-form" action="INDEX.html">
+
+          <div class="row">
+            <div class="col-50">
+              <h3>Delivery Address</h3>
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Eugene Mclaughlin">
+              
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="eugene@example.com">
+              
+              <label for="adr">Address</label>
+              <input type="text" id="adr" name="address" placeholder="123 fake st">
+              
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="Dublin">
+              
+              <label for="Eircode">Eircode</label>
+              <input type="text" id="Eircode" name="Eircode" placeholder="D01XXXX">
+            </div>
+
+            <div class="col-50">
+              <h3>Payment</h3>
+
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="Eugene Mclaughlin">
+              
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2025">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <p><b>Would you like to receive an email with new offers?</b></p>
+          <input type="radio" name="info"> Yes, please! 
+          <input type="radio" name="info"> No, thanks
+          
+          <p><b>I confirm all the information is correct</b></p>
+          <label><input type="checkbox" name="confirmation" required> I confirm</label><br><br>
+
+          <button type="submit">Place Order</button>
+          <a href="ProductsPage.html" class="button-link">Back to Products</a>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="bloomjavas.js"></script>
+</body>
+</html>
